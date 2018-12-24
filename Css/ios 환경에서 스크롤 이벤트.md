@@ -1,4 +1,4 @@
-# Today I Learned  
+# Scroll
 ## android에서는 문제없이 잘 돌아가는 기능이 ios에서는 제대로 작동하지 않는 경우가 있음.  
   - 모바일 스크롤  
     - overflow  
