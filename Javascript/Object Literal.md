@@ -1,5 +1,5 @@
 # Object Literal  
-    - Private methods  
+  - Private methods  
       ```js  
         var Module = (function () {
             var privateMethod = function () {
@@ -7,7 +7,7 @@
             };
         })();  
       ```  
-    - Understanding "return"  
+  - Understanding "return"  
       ```  
         Typical Modules will use return and return an Object to the Module,  
         to which the methods bound to the Object will be accessible from the Module’s namespace.  

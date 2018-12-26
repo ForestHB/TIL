@@ -5,13 +5,13 @@
   webpack은 이러한 문제점들을 보완하기 위해 파일 단위의 모듈 시스템을 하나의 파일로 묶어주는 모듈 번들러(module bundler)이다.
 
 ### Core Concepts  
-    - Entry : module webpack이 내부 종속성 그래프를 작성하는 것을 시작하기 위해 무엇을 사용해야 하는가를 가리킴  
+  - Entry : module webpack이 내부 종속성 그래프를 작성하는 것을 시작하기 위해 무엇을 사용해야 하는가를 가리킴  
       ```js  
         module.export = {
           entry: './path/file.js'
         };  
       ```  
-    - Output : 만들어진 번들을 방출하는 장소와 파일들의 이름을 지정하는 방법을 알려준다.  
+  - Output : 만들어진 번들을 방출하는 장소와 파일들의 이름을 지정하는 방법을 알려준다.  
       ```js  
         const path = require('path');
 
@@ -23,7 +23,7 @@
           }
         };  
       ```  
-    - Loader : webpack은 JavaScript 파일만을 인식하지만, Loader는 webpack이 다른 타입의 파일을 가공하고 어플리케이션에 의해 사용될 수 있고 종속성 그래프에 추가될 수 있는 다양한 모듈을 변환해줌.  
+  - Loader : webpack은 JavaScript 파일만을 인식하지만, Loader는 webpack이 다른 타입의 파일을 가공하고 어플리케이션에 의해 사용될 수 있고 종속성 그래프에 추가될 수 있는 다양한 모듈을 변환해줌.  
       ```js  
         const path = require('path');
 
@@ -38,7 +38,7 @@
           }
         };
       ```  
-    - plugins : loader가 특정 타입의 모듈을 변환시키는데 사용되는데 반해, plugins은 번들의 최적화 등 더욱 넓은 범위의 업무를 수행하는데 사용된다.  
+  - plugins : loader가 특정 타입의 모듈을 변환시키는데 사용되는데 반해, plugins은 번들의 최적화 등 더욱 넓은 범위의 업무를 수행하는데 사용된다.  
       ```js  
         const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -50,4 +50,4 @@
       ```  
 
 ## Link  
-  - [Webpack Concepts](https://webpack.js.org/concepts/) 
+  - [Webpack Concepts](https://webpack.js.org/concepts/)
