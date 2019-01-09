@@ -10,29 +10,6 @@
   인덴티드 신택스와 SCSS 파일들은 전통적으로 각각 .sass, .scss 확장자를 가진다.
 
 
-## Mixin  
-  - 프로젝트를 하다보면 밑줄임을 표현하는 스타일, 버튼 스타일, 아이콘 스타일에 해당하는 클래스를 만들어 놓고 필요한 위치에 클래스를 추가로 넣어주는 경우가 있는데, mixin 기능을 사용하면 더 쉽게 반복적인 작업을 할 수 있다. 또한 mixin은 특정 속성값을 인자로 전달할 수 있다.  
-  mixin을 선언할 때는 @mixin 지시자를 사용하며, 적용할 때는 @include 지시자를 사용한다.  
-  - SCSS  
-    ```scss  
-      @mixin ellipse-one($wid:100%){
-        width: $wid;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-
-      .text{
-        @include ellipse-one(80%);
-      }
-    ```  
-  - css  
-    ```css  
-      .text {width: 80%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    ```  
-  - 위 코드에서 ($wid:100%)는 $wid를 인자로 받는데 넘겨주는 것이 없을 경우 기본값을 100%로 전달한다는 것이다.  기본값은 콜론(:)값으로 정의한다. 그런데 주의해야 할 점은 기본값이 없는 인자에 대해 값을 넣어주지 않으면 에러가 난다는 것이다.  
-
-
 ## 학습 링크  
   - [Sass Syntax](http://megaton111.cafe24.com/2017/01/13/sass-%EB%AC%B8%EB%B2%95-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0import-%EC%83%81%EC%86%8Dextend-%EB%AF%B9%EC%8A%A4%EC%9D%B8mixin/)  
   - [Sass(종속형 시트 언어)](https://ko.wikipedia.org/wiki/Sass_(%EC%A2%85%EC%86%8D%ED%98%95_%EC%8B%9C%ED%8A%B8_%EC%96%B8%EC%96%B4)
